@@ -7,7 +7,12 @@ from manim_voiceover.services.azure import AzureService
 from math import atan2, floor, ceil, pi
 import json
 
-from helper import points_to_bezier_curve
+
+def points_to_bezier_curve(points):
+    obj = Circle()
+    obj.set_points_smoothly(points)
+    return obj
+# from helper import points_to_bezier_curve
 
 # import manimpango
 
